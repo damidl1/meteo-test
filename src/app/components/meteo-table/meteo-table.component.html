@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>time</th>
+      <th>temperature</th>
+      <th>code</th>
+      <th>wind</th>
+      <th>humidity</th>
+      <th>precipitation</th>
+      <th>cloud</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let forecast of forecastArray">
+      <td>{{forecast.time}}</td>
+      <td>{{forecast.temperature}} {{forecast.temperatureUnit}}</td>
+      <td>{{forecast.weatherCode}}</td>
+      <td>{{forecast.windSpeed}} {{forecast.windSpeedUnit}}</td>
+      <td>{{forecast.humidity}} {{forecast.humidityUnit}}</td>
+      <td>{{forecast.precipitation}} {{forecast.precipitationUnit}}</td>
+      <td>{{forecast.cloudCover}} {{forecast.cloudCoverUnit}}</td>
+    </tr>
+  </tbody>
+</table>
